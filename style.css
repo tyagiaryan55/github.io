@@ -1,0 +1,211 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --accent: #19a34a;
+    --muted: #6b7280
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: #0f1724
+}
+
+.app {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--card);
+    box-shadow: 0 1px 0 rgba(15, 23, 36, 0.06)
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 18px
+}
+
+.addr {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.addr .line1 {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.addr .line2 {
+    font-size: 13px;
+    font-weight: 600
+}
+
+.search {
+    padding: 12px 16px
+}
+
+.search input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef;
+    font-size: 14px
+}
+
+main {
+    padding: 12px 16px;
+    flex: 1
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px
+}
+
+.carousel {
+    overflow: hidden
+}
+
+.slides {
+    display: flex;
+    gap: 12px;
+    transition: transform 0.4s ease
+}
+
+.slide {
+    min-width: 300px;
+    padding: 18px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e6ffef, #eafaf1);
+    font-weight: 700
+}
+
+.slide .sub {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #fff, #fbfffb);
+    text-align: center
+}
+
+.cat div {
+    margin-top: 6px;
+    font-size: 13px
+}
+
+.products h3 {
+    margin: 0 0 8px 0
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+    border: 1px solid #f1f2f4;
+    flex: 0 0 calc(50% - 10px);
+}
+
+.prod .img {
+    font-size: 28px
+}
+
+.prod .name {
+    font-weight: 600
+}
+
+.prod .meta {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.prod button.add {
+    margin-top: auto;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    cursor: pointer
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    gap: 4px;
+    background: transparent;
+    padding: 8px 16px
+}
+
+.navbtn {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 10px 6px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px
+}
+
+.badge {
+    background: #ff3b30;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-left: 6px
+}
+
+@media(min-width:700px) {
+    .app {
+        max-width: 920px
+    }
+
+    .prod {
+        flex: 0 0 calc(33.333% - 10px);
+    }
+}

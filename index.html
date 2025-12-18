@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blinkit-style — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="left">
+        <div class="logo">TYAGI GROCERY</div>
+        <div class="addr"><span class="pin">📍</span>
+          <div>
+            <div class="line1">Deliver to ABES engineering college </div>
+            <div class="line2">Home • 2.0 km</div>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <button id="cartBtn">🛒 <span id="cartCount" class="badge">0</span></button>
+      </div>
+    </header>
+
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Search for products, brands and more" />
+    </div>
+
+    <main>
+      <section class="carousel card">
+        <div class="slides" id="slides">
+          <div class="slide">Fresh groceries delivered
+            <div class="sub">In 10-20 mins</div>
+          </div>
+          <div class="slide">Snacks & Beverages
+            <div class="sub">Quick deals</div>
+          </div>
+          <div class="slide">Household essentials
+            <div class="sub">Top picks</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories card">
+        <div class="cat">🍎<div>Fruits</div>
+        </div>
+        <div class="cat">🥦<div>Veggies</div>
+        </div>
+        <div class="cat">🥛<div>Dairy</div>
+        </div>
+        <div class="cat">🍞<div>Bakery</div>
+        </div>
+        <div class="cat">🍪<div>Snacks</div>
+        </div>
+        <div class="cat">☕<div>Beverages</div>
+        </div>
+      </section>
+
+      <section class="products card">
+        <h3>Popular near you</h3>
+        <div id="products" class="grid">
+          <div class="prod" data-name="Banana">
+            <div class="img"></div>
+            <img
+              src="https://www.tastingtable.com/img/gallery/for-a-perfect-banana-milkshake-turn-on-your-oven/l-intro-1673383244.jpg"
+              width="200" height="200" alt="banana">
+            <div class="name">Banana - 1 kg</div>
+            <div class="meta">₹50</div><button class="add">Add</button>
+          </div>
+          <div class="prod" data-name="Milk">
+            <div class="img"></div>
+            <img src="https://cdn.britannica.com/77/200377-050-4326767F.jpg" width="200" height="200" alt="milk">
+            <div class="name">Full Cream Milk</div>
+            <div class="meta">₹45</div><button class="add">Add</button>
+          </div>
+          <div class="prod" data-name="Bread">
+            <div class="img"></div>
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.yaMzlDNyjcaFrT1Mdztz5gHaFj?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+              width="200" height="200" alt="bread">
+            <div class="name">Brown Bread</div>
+            <div class="meta">₹30</div><button class="add">Add</button>
+          </div>
+          <div class="prod" data-name="Eggs">
+            <div class="img">
+              <img src="https://5.imimg.com/data5/OA/VL/ZR/SELLER-7413392/6-egg-cartons-1000x1000.jpg" alt="eggs"
+                width="200" height="200">
+            </div>
+            <div class="name">Eggs - 6 pcs</div>
+            <div class="meta">₹60</div><button class="add">Add</button>
+          </div>
+          <div class="prod" data-name="Chips">
+            <div class="img">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.T96-l_gUGQYf8e0GFOosngHaHm?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                width="200" height="200" alt="chips">
+            </div>
+            <div class="name">Crispy Chips</div>
+            <div class="meta">₹20</div>
+            <button class="add">Add</button>
+          </div>
+          <div class="prod" data-name="Tea">
+            <div class="img"></div>
+            <img src="https://baggout.com/wp-content/uploads/2021/03/how-to-make-green-tea-1170x780.jpg" width="200"
+              height="200" alt="tea">
+            <div class="name">Green Tea</div>
+            <div class="meta">₹120</div><button class="add">Add</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom">
+      <button class="navbtn">🏠<div>Home</div></button>
+      <button class="navbtn">🔍<div>Search</div></button>
+      <button class="navbtn">📄<div>Orders</div></button>
+      <button class="navbtn">👤<div>Profile</div></button>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
